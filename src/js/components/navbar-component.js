@@ -91,7 +91,7 @@ export default class NavbarComponent extends HTMLElement {
                     }
                   
                     .menu.show {
-                        height: ${menuItems.length * 58}px;
+                        height: ${menuItems.length * 64}px;
                     }
                   
                     .hamburger-menu {
@@ -170,6 +170,7 @@ export default class NavbarComponent extends HTMLElement {
         layer.addEventListener('click', () => {
             layer.classList.remove('show');
             menu.classList.remove('show');
+            document.body.classList.remove('bodyScroll');
         });
     }
 }
