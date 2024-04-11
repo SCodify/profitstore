@@ -91,7 +91,7 @@ export default class NavbarComponent extends HTMLElement {
                     }
                   
                     .menu.show {
-                        height: ${menuItems.length * 58}px;
+                        height: ${menuItems.length * 64}px;
                     }
                   
                     .hamburger-menu {
