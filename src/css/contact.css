@@ -1,0 +1,43 @@
+
+
+
+.form-contact {
+
+    width: 400px;
+    background-color: #a9a5ca;
+    padding: 30px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.firn-contact h4 {
+
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align-last: center;
+}
+
+
+.controls {
+
+    width: 100%;
+    background: #a9a5ca;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #b3902f;
+    font-family: "calibri";
+    font-size: 18px;
+}
+
+.form-contact .botons {
+
+    width: 100%;
+    background: #75726a;
+    border-radius: none;
+    padding: 12px;
+    color: azure;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
