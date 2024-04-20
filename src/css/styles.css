@@ -2,7 +2,7 @@
 @import url("./about.css");
 @import url("./catalog.css");
 @import url("./product.css");
-@import url("./contact.css ");
+@import url("./contact.css");
 
 * {
   box-sizing: border-box;
@@ -11,9 +11,17 @@
   font-family: sans-serif;
 }
 
+:root { /* paleta de colores */
+  --color-fondo:      #F2F2F2;
+  --color-acento:     #C83737;
+  --color-texto:      #0E0E0E;
+  --color-secundario: #C7C536;
+  --color-enlace:     #368FC7;
+}
+
 main {
   padding: 64px 0;
-  min-height: calc(100dvh - 57px - 124px);
+  min-height: calc(100dvh - 57px - 136px);
   position: sticky;
 }
 

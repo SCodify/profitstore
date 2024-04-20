@@ -170,6 +170,7 @@ export default class NavbarComponent extends HTMLElement {
         layer.addEventListener('click', () => {
             layer.classList.remove('show');
             menu.classList.remove('show');
+            document.body.classList.remove('bodyScroll');
         });
     }
 }
