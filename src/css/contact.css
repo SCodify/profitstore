@@ -1,4 +1,46 @@
 
+/* Titulo de Contacto */
+
+.contactitle {
+    background: url('../image/gimnasio-crossfit.jpg') no-repeat center center/cover;
+    height: 200px;
+    padding: 50px;
+    color: #f2f2f2;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+/*.container {
+
+    background-color: #b3902f;
+    padding: 20px;
+}*/
+
+
+/* Mapa y Redes Sociales */
+
+.mapa {
+
+    width: 100%;
+}
+
+.contact-info {
+
+   
+}
+
+.map-container h3 {
+
+    text-align: center;    
+    padding: 20px;
+    
+}
+
+
+
 
 
 .form-contact {
@@ -17,11 +59,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;    
-}
-
-.mapa {
-
-    width: 100%;
 }
 
 .form-contact h4 {
