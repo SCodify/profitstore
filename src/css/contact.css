@@ -4,24 +4,37 @@
 .form-contact {
 
     width: 400px;
-    background-color: #a9a5ca;
+    background-color: #f2f2f2;
     padding: 30px;
     margin: auto;
     margin-top: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
 }
 
-.firn-contact h4 {
+.ubication {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;    
+}
+
+.mapa {
+
+    width: 100%;
+}
+
+.form-contact h4 {
 
     font-size: 22px;
     margin-bottom: 20px;
     text-align-last: center;
 }
 
-
 .controls {
 
     width: 100%;
-    background: #a9a5ca;
+    background: #ffffff;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
