@@ -55,30 +55,71 @@
            <section class="form-contact"> 
             <h4>Formulario de Contacto</h4>
             <form >
-                <input class="controls" type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>                       
-                <input class="controls" type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" required>                   
-                <input class="controls" type="email" id="email" name="email" placeholder="Ingrese su Email" required>             
-                <input class="controls" type="tel" id="telefono" name="telefono" placeholder="Ingrese su Número de Telefono" required>                  
-                  <select class="controls" name="locales" id="locales_select" required>
-                      <option disabled selected value="">Seleccionar Local</option>                      
-                      <option value="Local 1">Local 1</option>
-                      <option value="Local 2">Local 2</option>
-                      <option value="Local 3">Local 3</option>
-                  </select>
-                  <div class="controls columns" >
-                    <div >
-                        <label for="socio1">Socio</label>
-                        <input required type="radio" name="socio" id="socio1" value="true"> 
+                <div class="formbox">
+                    <div class="row50">
+                                <div class="inputbox">
+                                  <p>Nombre</p>
+                                  <input class="controls" type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
+                                </div>    
+                                <div class="inputbox">
+                                  <p>Apellido</p>
+                                  <input class="controls" type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" required> 
+                                </div>
                     </div>
-                    <div>
-                      <label for="socio2">No Socio</label>
-                      <input required type="radio" name="socio" id="socio2" value="false">
+                                
+                    <div class="row50"> 
+                                <div class="inputbox">
+                                  <p>Mail</p>
+                                  <input class="controls" type="email" id="email" name="email" placeholder="Ingrese su Email" required>  
+                                </div>
+                                <div class="inputbox">
+                                  <p>Teléfono</p>  
+                                  <input class="controls" type="tel" id="telefono" name="telefono" placeholder="Ingrese su Número de Telefono" required> 
+                                </div> 
                     </div>
-                </div>                                                  
-                <textarea class="controls" id="mensaje" name="mensaje" rows="4" placeholder="Agregue una Descripción" required></textarea>                 
-                <input class="controls"   type="file" name="foto" id="" accept="image/*">
-                <input class="btn btn-primary d-flex w-100 text-center" type="submit" value="Enviar">
-                <span class="error"></span>
+                                
+                      <div class="row50">
+                                <div class="inputbox">
+                                    <p>Sucursal</p>
+                                    <select class="controls" name="locales" id="locales_select" required>
+                                        <option disabled selected value="">Seleccionar Local</option>                      
+                                        <option value="Local 1">Local 1</option>
+                                        <option value="Local 2">Local 2</option>
+                                        <option value="Local 3">Local 3</option>
+                                    </select>
+                                </div> 
+                                <div class="inputbox"> 
+                                    <p>¿Es socio?</p>
+                                    <div class="controls columns" >                                      
+                                      <div>                                          
+                                          <label for="socio1">Socio</label>
+                                          <input required type="radio" name="socio" id="socio1" value="true"> 
+                                      </div>
+                                      <div>
+                                        <label for="socio2">No Socio</label>
+                                        <input required type="radio" name="socio" id="socio2" value="false">
+                                      </div>
+                                    </div>
+                              </div> 
+                      </div>
+                      <div class="row100">
+                            <div class="inputbox">
+                                  <p>Mensaje</p>                                         
+                                  <textarea class="controls" id="mensaje" name="mensaje" rows="4" placeholder="Agregue una Descripción" required></textarea>
+                            </div>
+                      </div>            
+                      <div class="row100"> 
+                            <div class="inputbox">
+                                  <input class="controls"   type="file" name="foto" id="" accept="image/*">
+                            </div>
+                      </div>  
+                      <div class="row100">
+                            <div class="inputbox">
+                                  <input class="btn btn-primary d-flex w-100 text-center" type="submit" value="Enviar">
+                                  <span class="error"></span>
+                            </div>      
+                      </div> 
+                </div>
             </form>
            </section>
           </div>

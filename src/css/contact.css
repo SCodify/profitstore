@@ -31,13 +31,12 @@
 .form {
 
     grid-area: form-container;
-    background: rgb(137, 240, 137);
+    /*background: rgb(137, 240, 137);*/
 }
 
 .contact {
 
     padding: 40px;
-
 }
 
 .container-contact {
@@ -130,30 +129,71 @@
 }
 
 
-
 /* Formulario de Contacto */
+
+.formbox {
+
+    position: relative;
+    width: 100%;
+}
+.formbox .row50 {
+
+    display: flex;
+    gap: 20px;
+}
+
+.inputbox {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formbox .row100 .inputbox {
+
+    width: 100%;
+}
+
+.inputbox p {
+
+   color: #070707; 
+   margin-top: 10px;
+   margin-bottom: 5px;
+   font-weight: 500;
+   text-decoration: none;
+
+}
+
+.inputbox input {
+
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+}
+
 
 .columns {
     display: flex;
     gap: 16px;
 }
 
-
 .form-contact {
 
-    max-width: 400px;
-    background-color: #f2f2f2;
+    width: 80%;
+    /*max-width: 400px;*/
+    background-color: rgba(186, 182, 182, 0.5);
     padding: 30px;
     margin: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
 
 .form-contact h4 {
 
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center;
+    text-decoration: none;
 }
 
 .controls {
