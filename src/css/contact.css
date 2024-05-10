@@ -9,33 +9,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
 }
 
-/*.container {
-
-    background-color: #b3902f;
-    padding: 20px;
-}*/
+/* Contenedor de toda la estructura de mapa, datos y formulario */
 
 
-/* Mapa y Redes Sociales */
+.map {
 
-.mapa {
-
-    width: 100%;
+    grid-area: map-container;
+    background: #75726a;
 }
 
-.contact-info {
+.details {
 
-   background: #f2f2f2;
+    grid-area: contact-detail;
+    background: blue;
 }
 
-.map-container h3 {
+.form {
 
-    text-align: center;    
-    padding: 20px;
+    grid-area: form-container;
+    background: rgb(137, 240, 137);
+}
+
+.contact {
+
+    padding: 40px;
+
+}
+
+.container-contact {
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'map-container contact-detail'
+    'form-container form-container';
+    grid-gap: 20px;
     
 }
 
@@ -43,29 +57,65 @@
 
 
 
+
+
+
+
+
+/* Mapa y Redes Sociales */
+
+.mapa {
+
+    width: 90%;
+    position: center;
+    margin-bottom: 10px;
+}
+
+.map-container h3 {
+
+    text-align: center;    
+    padding: 20px; 
+}
+
+.contact-details h4 {
+
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align-last: center;
+}
+
+.contact-details p {
+
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align-last: center;
+}
+
+/* Formulario de Contacto */
+
+
+
+.columns {
+    display: flex;
+    gap: 16px;
+}
+
+
 .form-contact {
 
-    width: 400px;
+    max-width: 400px;
     background-color: #f2f2f2;
     padding: 30px;
     margin: auto;
-    margin-top: 200px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
 }
 
-.ubication {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;    
-}
 
 .form-contact h4 {
 
     font-size: 22px;
     margin-bottom: 20px;
-    text-align-last: center;
+    text-align: center;
 }
 
 .controls {
@@ -89,5 +139,28 @@
     color: azure;
     margin: 16px 0;
     font-size: 16px;
+
+}
+
+@media (max-width: 768px) {
+    .container-contact {
+        align-items: center;
+        /*justify-items: center;*/
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'map-container'
+        'contact-detail'
+        'form-container';
+
+    }
+
+    .contact {
+        padding: 40px 5px;
+    }
+    
+    .mapa {
+        width: 100%;
+    }
 
 }
