@@ -15,17 +15,17 @@
 
 /* Contenedor de toda la estructura de mapa, datos y formulario */
 
-
 .map {
 
     grid-area: map-container;
-    background: #75726a;
+    /*background: #75726a;*/
 }
 
 .details {
 
     grid-area: contact-detail;
-    background: blue;
+    background: rgb(39, 39, 39);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .form {
@@ -53,47 +53,85 @@
     
 }
 
-
-
-
-
-
-
-
-
-
 /* Mapa y Redes Sociales */
 
 .mapa {
 
-    width: 90%;
+    width: 100%;
     position: center;
     margin-bottom: 10px;
 }
 
-.map-container h3 {
+/* Informacion de Contacto */
+.details h3 {
 
-    text-align: center;    
-    padding: 20px; 
-}
-
-.contact-details h4 {
-
+    color: #f2f2f2;
     font-size: 22px;
     margin-bottom: 20px;
     text-align-last: center;
 }
 
-.contact-details p {
+.details .detailbox div {
 
-    font-size: 22px;
-    margin-bottom: 20px;
-    text-align-last: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
+
+.details .detailbox span {
+
+    min-width: 40px;
+    height: 40px;
+    color: #f2f2f2;
+    background: #75726a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.details .detailbox div p {
+
+    font-size: 1.1rem;
+    color: #f2f2f2;    
+}
+
+.details .detailbox div a {
+
+    font-size: 1.1rem;
+    color: #f2f2f2; 
+    text-decoration: none;   
+}
+
+.sci {
+
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li {
+
+    list-style: none;
+    margin-right: 15px;
+
+}
+
+.sci li a {
+    color: #f2f2f2;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a:hover {
+
+    color: #f2f2f2;
+}
+
+
 
 /* Formulario de Contacto */
-
-
 
 .columns {
     display: flex;
