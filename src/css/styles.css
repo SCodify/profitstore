@@ -21,7 +21,6 @@
 }
 
 main {
-  padding: 64px 0;
   min-height: calc(100dvh - 57px - 136px);
   position: sticky;
 }

@@ -1,3 +1,7 @@
-.product {
+.product-title {
+  padding-top: 64px;
+}
 
+.product {
+  padding-bottom: 64px;
 }

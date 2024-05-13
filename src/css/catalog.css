@@ -1,9 +1,14 @@
+.catalog-title {
+  padding-top: 64px;
+}
+
 .catalog {
   width: 100%;
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+  padding-bottom: 64px;
 }
 
 .card-product {
