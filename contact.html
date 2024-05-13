@@ -42,10 +42,10 @@
                         <a href=""> +54 011 654 2134</a>
                     </div>   
                     <ul class="sci">  
-                      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></li>
-                      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></li>
-                      <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></li>
-                      <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></li>
+                      <li><a href="#"><ion-icon name="logo-instagram"></a></ion-icon></li>
+                      <li><a href="#"><ion-icon name="logo-facebook"></a></ion-icon></li>
+                      <li><a href="#"><ion-icon name="logo-twitter"></a></ion-icon></li>
+                      <li><a href="#"><ion-icon name="logo-whatsapp"></a></ion-icon></li>
                     </ul>
                     </div> 
               </div>
@@ -58,30 +58,36 @@
                 <div class="formbox">
                     <div class="row50">
                                 <div class="inputbox">
-                                  <p>Nombre</p>
-                                  <input class="controls" type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
+                                  <span>
+                                    <span class="reque">*</span> Nombre
+                                  </span>
+                                  <input class="controls" type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" >
                                 </div>    
                                 <div class="inputbox">
-                                  <p>Apellido</p>
-                                  <input class="controls" type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" required> 
+                                  <span>
+                                    <span class="reque">*</span> Apellido
+                                  </span>
+                                  <input class="controls" type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" > 
                                 </div>
                     </div>
                                 
                     <div class="row50"> 
                                 <div class="inputbox">
-                                  <p>Mail</p>
-                                  <input class="controls" type="email" id="email" name="email" placeholder="Ingrese su Email" required>  
+                                  <span>
+                                    <span class="reque">*</span> Mail
+                                  </span>
+                                  <input class="controls" type="email" id="email" name="email" placeholder="Ingrese su Email" >  
                                 </div>
                                 <div class="inputbox">
-                                  <p>Teléfono</p>  
-                                  <input class="controls" type="tel" id="telefono" name="telefono" placeholder="Ingrese su Número de Telefono" required> 
+                                  <span>Teléfono</span>  
+                                  <input class="controls" type="tel" id="telefono" name="telefono" placeholder="Ingrese su Número de Telefono" > 
                                 </div> 
                     </div>
                                 
                       <div class="row50">
                                 <div class="inputbox">
-                                    <p>Sucursal</p>
-                                    <select class="controls" name="locales" id="locales_select" required>
+                                    <span>Sucursal</span>
+                                    <select class="controls" name="locales" id="locales_select" >
                                         <option disabled selected value="">Seleccionar Local</option>                      
                                         <option value="Local 1">Local 1</option>
                                         <option value="Local 2">Local 2</option>
@@ -89,23 +95,25 @@
                                     </select>
                                 </div> 
                                 <div class="inputbox"> 
-                                    <p>¿Es socio?</p>
+                                    <span>¿Es socio?</span>
                                     <div class="controls columns" >                                      
                                       <div>                                          
                                           <label for="socio1">Socio</label>
-                                          <input required type="radio" name="socio" id="socio1" value="true"> 
+                                          <input  type="radio" name="socio" id="socio1" value="true"> 
                                       </div>
                                       <div>
                                         <label for="socio2">No Socio</label>
-                                        <input required type="radio" name="socio" id="socio2" value="false">
+                                        <input  type="radio" name="socio" id="socio2" value="false">
                                       </div>
                                     </div>
                               </div> 
                       </div>
                       <div class="row100">
                             <div class="inputbox">
-                                  <p>Mensaje</p>                                         
-                                  <textarea class="controls" id="mensaje" name="mensaje" rows="4" placeholder="Agregue una Descripción" required></textarea>
+                                  <span>
+                                    <span class="reque">*</span> Mensaje
+                                  </span>                                         
+                                  <textarea class="controls" id="mensaje" name="mensaje" rows="4" placeholder="Agregue una Descripción" ></textarea>
                             </div>
                       </div>            
                       <div class="row100"> 
@@ -115,8 +123,9 @@
                       </div>  
                       <div class="row100">
                             <div class="inputbox">
+                                  <ul class="mensajes"></ul>
                                   <input class="btn btn-primary d-flex w-100 text-center" type="submit" value="Enviar">
-                                  <span class="error"></span>
+
                             </div>      
                       </div> 
                 </div>
