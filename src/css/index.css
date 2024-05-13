@@ -1,7 +1,16 @@
 
+/*.container {
+
+    width: 95%;
+
+}*/
 
 .showcase {
 
     width: 100%;
-    background: red;
+    height: 500px;
+    background: url('../image/home.png') no-repeat center center/cover;
+    background-size: 105%;
+    background-position: center quarter center;
+    filter: hue-rotate(200deg) saturate(120%);
 }
