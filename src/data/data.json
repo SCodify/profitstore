@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "imgProducto": "cam1.jpg",
+    "nombre": "Producto 1",
+    "descrip": "Esta es la decripción del producto",
+    "precio": 14000
+  },
+  {
+    "id": 2,
+    "imgProducto": "cam2.jpg",
+    "nombre": "Producto 2",
+    "descrip": "Esta es la decripción del producto",
+    "precio": 20500
+  },
+  { 
+    "id": 3,
+    "imgProducto": "cam3.jpg",
+    "nombre": "Producto 3",
+    "descrip": "Esta es la decripción del producto",
+    "precio": 30600
+  },
+  {
+    "id": 4,
+    "imgProducto": "cam4.jpg",
+    "nombre": "Producto 4",
+    "descrip": "Esta es la decripción del producto",
+    "precio": 40060
+  },
+  {
+    "id": 5,
+    "imgProducto": "cam5.jpg",
+    "nombre": "Producto 5",
+    "descrip": "Esta es la decripción del producto",
+    "precio": 52000
+  },
+  {
+    "id": 6,
+    "imgProducto": "cam6.jpg",
+    "nombre": "Producto 6",
+    "descrip": "Esta es la decripción del producto",
+    "precio": 60300
+  },
+  {
+    "id": 7,
+    "imgProducto": "cam7.jpg",
+    "nombre": "Producto 7",
+    "descrip": "Esta es la decripción del producto",
+    "precio": 13000
+  },
+  {
+    "id": 8,
+    "imgProducto": "cam8.jpg",
+    "nombre": "Producto 8",
+    "descrip": "Esta es la decripción del producto",
+    "precio": 32000
+  }
+]
