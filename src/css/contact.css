@@ -136,6 +136,9 @@
     position: relative;
     width: 100%;
 }
+
+
+
 .formbox .row50 {
 
     display: flex;
@@ -155,21 +158,45 @@
     width: 100%;
 }
 
-.inputbox p {
+.inputbox span {
 
    color: #070707; 
    margin-top: 10px;
    margin-bottom: 5px;
    font-weight: 500;
-   text-decoration: none;
-
 }
+
+span .reque {
+    color: red;
+}
+
+.mensajes {
+    list-style: none;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
 
 .inputbox input {
 
     padding: 10px;
     font-size: 1.1em;
     outline: none;
+}
+
+.inputbox textarea {
+
+    padding: 10px;
+    font-size: 1.3em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-width: 220px;
 }
 
 
@@ -230,14 +257,25 @@
         'map-container'
         'contact-detail'
         'form-container';
-
     }
-
     .contact {
         padding: 40px 5px;
-    }
-    
+    }    
     .mapa {
+        width: 100%;
+    }
+
+
+
+
+    .formbox .row50 {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .inputbox {
+        
         width: 100%;
     }
 
