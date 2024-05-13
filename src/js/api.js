@@ -4,7 +4,10 @@ export const api = {
       const catalog = await response.json();
       return catalog
   },
-  getProduct: async (id) => {
-    const product = catalog.find((prod) => prod.id === id)
+  getProduct: async (pid) => {
+    console.log("id api: ", pid);
+    const products = await api.getProducts()
+    const product = products.find((prod) => prod.id == pid)
+    return product
   }
 }
