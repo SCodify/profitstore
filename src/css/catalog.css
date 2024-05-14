@@ -1,14 +1,9 @@
-.catalog-title {
-  padding-top: 64px;
-}
-
 .catalog {
   width: 100%;
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  padding-bottom: 64px;
 }
 
 .card-product {
@@ -36,7 +31,14 @@
 }
 
 .card-product-price {
+  font-size: 18px;
   color: #0e8746;
+}
+
+.card-product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .custom-btn {
@@ -75,6 +77,10 @@
 @media (max-width: 768px) {
   .catalog {
     grid-template-columns: 1fr;
+  }
+
+  .card-product {
+    padding: 8px;
   }
 }
 

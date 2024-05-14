@@ -2,9 +2,17 @@ import { api } from './api.js';
 
 const catalogContainer = document.querySelector(".catalog")
 
+export function formatearAPesos(monto) {
+  const montoFormateado = new Intl.NumberFormat("es-AR",{
+    style: "currency",
+    currency: "ARS"
+  }).format(monto)
+
+  return montoFormateado
+}
+
 export async function renderCatalog() {
   const productos = await api.getProducts()
-  console.log(productos);
 
   let catalog = ""
 
@@ -17,7 +25,7 @@ export async function renderCatalog() {
         <div class="card-product-info">
           <h3>${element.nombre}</h3>
           <p>${element.descrip}</p>
-          <p class="card-product-price"><strong>$${element.precio}</strong></p>
+          <p class="card-product-price"><strong>${formatearAPesos(element.precio)}</strong></p>
         </div>
         <a class="custom-btn" href="../../product.html?id=${element.id}">Ver peoducto</a>
       </div>
