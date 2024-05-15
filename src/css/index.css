@@ -35,4 +35,10 @@
  }
   /*filter: hue-rotate(200deg) saturate(120%);*/
 
+.text-container {
+    padding: 170px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
   
