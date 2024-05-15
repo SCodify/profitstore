@@ -6,11 +6,31 @@
 }*/
 
 .showcase {
-
     width: 100%;
-    height: 500px;
+    height: 550px;
     background: url('../image/home.png') no-repeat center center/cover;
-    background-size: 105%;
-    background-position: center quarter center;
-    filter: hue-rotate(200deg) saturate(120%);
+    background-size: 100%;
+    background-position: center quarter center;  
+
+    
 }
+
+.tugim {
+
+    font-family: 'Arial', sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 5vw;
+
+}
+
+.encasa {
+
+    font-family: 'Arial', sans-serif;
+    font-weight: 900;
+    font-size: 5vw; /* Ajusta el tamaño de la fuente según sea necesario */
+    color: transparent;
+    -webkit-text-stroke: 2px #e2ec54; /* Grosor del contorno y color */
+    text-stroke: 2px #FFDB58; /* Grosor del contorno y color */
+ }
+  /*filter: hue-rotate(200deg) saturate(120%);*/
