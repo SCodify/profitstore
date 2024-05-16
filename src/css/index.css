@@ -1,19 +1,11 @@
 
-/*.container {
-
-    width: 95%;
-
-}*/
-
 .showcase {
     width: 100%;
     height: 550px;
     background: url('../image/home.png') no-repeat center center/cover;
     background-size: 100%;
     background-position: center quarter center;  
-
-    
-}
+ }
 
 .tugim {
 
@@ -21,7 +13,6 @@
     font-weight: 900;
     color: white;
     font-size: 5vw;
-
 }
 
 .encasa {
@@ -33,8 +24,7 @@
     -webkit-text-stroke: 2px #e2ec54; /* Grosor del contorno y color */
     text-stroke: 2px #FFDB58; /* Grosor del contorno y color */
  }
-  /*filter: hue-rotate(200deg) saturate(120%);*/
-
+ 
 .text-container {
     padding: 170px;
     display: grid;
