@@ -44,7 +44,11 @@
  │       ├── 📂components/
  │       │   ├── 📄footer-component.js
  │       │   └── 📄navbar-component.js
- │       └── 📄index.js
+ │       ├── 📄api.js
+ │       ├── 📄catalog.js
+ │       ├── 📄index.js
+ │       ├── 📄product.js
+ │       └── 📄validator.js
  ├── 📄_redirects
  ├── 📄.gitignore
  ├── 📄about.html
@@ -71,11 +75,4 @@
 | El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. (Mandatorio) | $\color{green}{\textsf{Completo}}$ |
 | La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. (Mandatorio) | $\color{red}{\textsf{Pendiente}}$ |
 | El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de [w3](https://validator.w3.org/) sin errores.  (Mandatorio) | $\color{red}{\textsf{Pendiente}}$ |
-| Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts. Es optativo incluir algún elemento de Bootstrap. | $\color{orange}{\textsf{En proceso}}$ |
-
-### Notas
-
-<sup>[volver a la tabla de contenido](#tabla-de-contenido)</sup>
-
-> [!NOTE]\
-> Pasar las diferentes rutas por el validador de [w3](https://validator.w3.org/).cd
+| Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts. Es optativo incluir algún elemento de Bootstrap. | $\color{green}{\textsf{Completo}}$ |

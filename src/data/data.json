@@ -1,58 +1,98 @@
 [
   {
     "id": 1,
-    "imgProducto": "https://source.unsplash.com/480x300/?gym&random=1",
+    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=1",
     "nombre": "Producto 1",
     "descrip": "Esta es la decripción del producto 1",
+    "detalles": [
+      "Detalle 1", 
+      "Detalle 2", 
+      "Detalle 3"
+    ],
     "precio": 14000.00
   },
   {
     "id": 2,
-    "imgProducto": "https://source.unsplash.com/480x300/?gym&random=2",
+    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=2",
     "nombre": "Producto 2",
     "descrip": "Esta es la decripción del producto 2",
+    "detalles": [
+      "Detalle 1", 
+      "Detalle 2", 
+      "Detalle 3"
+    ],
     "precio": 20500.00
   },
   { 
     "id": 3,
-    "imgProducto": "https://source.unsplash.com/480x300/?gym&random=3",
+    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=3",
     "nombre": "Producto 3",
     "descrip": "Esta es la decripción del producto 3",
+    "detalles": [
+      "Detalle 1", 
+      "Detalle 2", 
+      "Detalle 3"
+    ],
     "precio": 30600.00
   },
   {
     "id": 4,
-    "imgProducto": "https://source.unsplash.com/480x300/?gym&random=4",
+    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=4",
     "nombre": "Producto 4",
     "descrip": "Esta es la decripción del producto 4",
+    "detalles": [
+      "Detalle 1", 
+      "Detalle 2", 
+      "Detalle 3"
+    ],
     "precio": 40060.00
   },
   {
     "id": 5,
-    "imgProducto": "https://source.unsplash.com/480x300/?gym&random=5",
+    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=5",
     "nombre": "Producto 5",
     "descrip": "Esta es la decripción del producto 5",
+    "detalles": [
+      "Detalle 1", 
+      "Detalle 2", 
+      "Detalle 3"
+    ],
     "precio": 52000.00
   },
   {
     "id": 6,
-    "imgProducto": "https://source.unsplash.com/480x300/?gym&random=6",
+    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=6",
     "nombre": "Producto 6",
     "descrip": "Esta es la decripción del producto 6",
+    "detalles": [
+      "Detalle 1", 
+      "Detalle 2", 
+      "Detalle 3"
+    ],
     "precio": 60300.00
   },
   {
     "id": 7,
-    "imgProducto": "https://source.unsplash.com/480x300/?gym&random=7",
+    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=7",
     "nombre": "Producto 7",
     "descrip": "Esta es la decripción del producto 7",
+    "detalles": [
+      "Detalle 1", 
+      "Detalle 2", 
+      "Detalle 3"
+    ],
     "precio": 13000.00
   },
   {
     "id": 8,
-    "imgProducto": "https://source.unsplash.com/480x300/?gym&random=8",
+    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=8",
     "nombre": "Producto 8",
     "descrip": "Esta es la decripción del producto 8",
+    "detalles": [
+      "Detalle 1", 
+      "Detalle 2", 
+      "Detalle 3"
+    ],
     "precio": 32000.00
   }
 ]
