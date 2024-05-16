@@ -19,8 +19,8 @@ export async function renderCatalog() {
   productos.forEach(element => {
     catalog += `
       <div class="card-product" id="card-product-${element.id}">
-        <div class="card-product-img-container">
-          <img class="card-product-img" src="${element.imgProducto}" alt="" srcset=""/>
+        <div class="card-product-img-container aspect16 placeholder-img">
+          <img class="card-product-img aspect16" src="${element.imgProducto}" alt="" srcset=""/>
         </div>
         <div class="card-product-info">
           <h3>${element.nombre}</h3>

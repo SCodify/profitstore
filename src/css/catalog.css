@@ -21,6 +21,7 @@
 }
 
 .card-product-img-container {
+  border-radius: 8px;
   width: 100%;
 }
 
@@ -43,7 +44,7 @@
 
 .custom-btn {
   text-decoration: none;
-  background-color: #0e4a87;
+  background-color: var(--color-enlace);
   color: white;
   border: none;
   outline: none;
@@ -80,13 +81,17 @@
   }
 
   .card-product {
-    padding: 8px;
+    padding: 16px;
   }
 }
 
 @media (max-width: 576px) {
   .catalog {
     grid-template-columns: 1fr;
+  }
+
+  .card-product {
+    padding: 8px;
   }
 }
 

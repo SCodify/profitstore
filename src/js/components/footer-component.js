@@ -93,9 +93,20 @@ export default class FooterComponent extends HTMLElement {
                 font-size: 0.8rem
               }
 
+              .p50 {
+                padding: 50px;
+              }
+
               @media (max-width: 768px) {
                 .media768 {
                   flex-direction: column;
+                }
+
+                .p50 {
+                  padding-top: 50px;
+                  padding-bottom: 50px;
+                  padding-right: calc(1.5rem* 0.5);
+                  padding-left: calc(1.5rem* 0.5);
                 }
               }
 
@@ -103,13 +114,15 @@ export default class FooterComponent extends HTMLElement {
                 .media576 {
                   flex-direction: column;
                 }
+              }
 
+              @media (max-width: 340px) {
                 .text-end{
                   display: none;
                 }
               }
           </style>
-          <footer class="flex justify-center ">
+          <footer class="flex justify-center p50">
             <div class="container w100 flex flex-col gap32">
               <div class="flex justify-between gap32">
                 <div class="flex gap16 media768">

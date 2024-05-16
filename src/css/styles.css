@@ -23,13 +23,19 @@
 }
 
 main {
-  min-height: calc(100dvh - 57px - 206.31px);
+  min-height: calc(100dvh - 57px - 266.31px);
   position: sticky;
 }
 
 @media (max-width: 768px) {
   main {
-    min-height: calc(100dvh - 57px - 260.39px);
+    min-height: calc(100dvh - 57px - 320.69px);
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    min-height: calc(100dvh - 57px);
   }
 }
 
@@ -39,6 +45,18 @@ main {
 
 .p64 {
   padding: 64px 0;
+}
+
+.aspect16 {
+  aspect-ratio: 16 / 9;
+}
+
+.placeholder-img {
+  background-color: #bababa;
+}
+
+.z1 {
+ z-index: 1;
 }
 
 .container {
