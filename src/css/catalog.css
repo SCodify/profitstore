@@ -1,14 +1,9 @@
-.catalog-title {
-  padding-top: 64px;
-}
-
 .catalog {
   width: 100%;
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  padding-bottom: 64px;
 }
 
 .card-product {
@@ -26,6 +21,7 @@
 }
 
 .card-product-img-container {
+  border-radius: 8px;
   width: 100%;
 }
 
@@ -36,12 +32,19 @@
 }
 
 .card-product-price {
+  font-size: 18px;
   color: #0e8746;
+}
+
+.card-product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .custom-btn {
   text-decoration: none;
-  background-color: #0e4a87;
+  background-color: var(--color-enlace);
   color: white;
   border: none;
   outline: none;
@@ -76,11 +79,19 @@
   .catalog {
     grid-template-columns: 1fr;
   }
+
+  .card-product {
+    padding: 16px;
+  }
 }
 
 @media (max-width: 576px) {
   .catalog {
     grid-template-columns: 1fr;
+  }
+
+  .card-product {
+    padding: 8px;
   }
 }
 
