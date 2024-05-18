@@ -22,7 +22,7 @@ export async function renderProduct() {
         <img class="card-product-img aspect16" src="${productData.imgProducto}" alt="" srcset=""/>
       </div>
       <div class="card-product-info">
-        <h3>${productData.nombre}</h3>
+        <h2>${productData.nombre}</h2>
         <p>${productData.descrip}</p>
         <ul class="card-product-detail">${detallesList}</ul>
         <p class="card-product-price"><strong>${formatearAPesos(productData.precio)}</strong></p>
