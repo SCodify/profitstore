@@ -1,0 +1,53 @@
+.grid {
+    display: grid;
+    gap: 16px;
+   grid-template-rows: 1fr;
+
+}
+.textoCentradoVertical{
+    align-items: center;
+}
+
+.columnasDos {
+    grid-template-columns: 1fr 1fr;
+}
+
+.columnasTres {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    .columna {
+        grid-template-columns: 1fr;
+    }
+
+    .columnaReverso {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.w100 {
+    width: 100%;
+}
+
+.cardPersonal {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 8px;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-enlace);
+}
+
+.fotocirular {
+    border-radius: 100%;
+}
+
+
+
+.textoCentrado {
+    text-align: center;
+}
