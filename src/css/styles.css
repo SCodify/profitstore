@@ -2,23 +2,61 @@
 @import url("./about.css");
 @import url("./catalog.css");
 @import url("./product.css");
-@import url("./contact.css ");
+@import url("./contact.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  /* outline: 1px solid red */;
+}
+
+:root { /* paleta de colores */
+  --color-fondo:      #F2F2F2;
+  --color-acento:     #C83737;
+  --color-texto:      #0E0E0E;
+  --color-secundario: #C7C536;
+  --color-enlace:     #368FC7;
 }
 
 main {
-  padding: 64px 0;
-  min-height: calc(100dvh - 57px - 124px);
+  min-height: calc(100dvh - 57px);
   position: sticky;
+}
+
+@media (max-width: 768px) {
+  main {
+    min-height: calc(100dvh - 57px);
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    min-height: calc(100dvh - 57px);
+  }
 }
 
 .bodyScroll {
   overflow-y: hidden;
+}
+
+.p64 {
+  padding: 64px 0;
+}
+
+.aspect16 {
+  aspect-ratio: 16 / 9;
+}
+
+.placeholder-img {
+  background-color: #bababa;
+}
+
+.z1 {
+ z-index: 1;
 }
 
 .container {

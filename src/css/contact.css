@@ -1,0 +1,282 @@
+
+/* Titulo de Contacto */
+
+.contactitle {
+    background: url('../image/gimnasio-crossfit.jpg') no-repeat center center/cover;
+    height: 200px;
+    padding: 50px;
+    color: #f2f2f2;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+/* Contenedor de toda la estructura de mapa, datos y formulario */
+
+.map {
+
+    grid-area: map-container;
+    /*background: #75726a;*/
+}
+
+.details {
+
+    grid-area: contact-detail;
+    background: rgb(39, 39, 39);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.form {
+
+    grid-area: form-container;
+    /*background: rgb(137, 240, 137);*/
+}
+
+.contact {
+
+    padding: 40px;
+}
+
+.container-contact {
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'map-container contact-detail'
+    'form-container form-container';
+    grid-gap: 20px;
+    
+}
+
+/* Mapa y Redes Sociales */
+
+.mapa {
+
+    width: 100%;
+    position: center;
+    margin-bottom: 10px;
+}
+
+/* Informacion de Contacto */
+.details h3 {
+
+    color: #f2f2f2;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align-last: center;
+}
+
+.details .detailbox div {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.details .detailbox span {
+
+    min-width: 40px;
+    height: 40px;
+    color: #f2f2f2;
+    background: #75726a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.details .detailbox div p {
+
+    font-size: 1.1rem;
+    color: #f2f2f2;    
+}
+
+.details .detailbox div a {
+
+    font-size: 1.1rem;
+    color: #f2f2f2; 
+    text-decoration: none;   
+}
+
+.sci {
+
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li {
+
+    list-style: none;
+    margin-right: 15px;
+
+}
+
+.sci li a {
+    color: #f2f2f2;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a:hover {
+
+    color: #f2f2f2;
+}
+
+
+/* Formulario de Contacto */
+
+.formbox {
+
+    position: relative;
+    width: 100%;
+}
+
+
+
+.formbox .row50 {
+
+    display: flex;
+    gap: 20px;
+}
+
+.inputbox {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formbox .row100 .inputbox {
+
+    width: 100%;
+}
+
+.inputbox span {
+
+   color: #070707; 
+   margin-top: 10px;
+   margin-bottom: 5px;
+   font-weight: 500;
+}
+
+span .reque {
+    color: red;
+}
+
+.mensajes {
+    list-style: none;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
+
+.inputbox input {
+
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+}
+
+.inputbox textarea {
+
+    padding: 10px;
+    font-size: 1.3em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-width: 220px;
+}
+
+
+.columns {
+    display: flex;
+    gap: 16px;
+}
+
+.form-contact {
+
+    width: 80%;
+    /*max-width: 400px;*/
+    background-color: rgba(186, 182, 182, 0.5);
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-contact h4 {
+
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.controls {
+
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #b3902f;
+    font-family: "calibri";
+    font-size: 18px;
+}
+
+.form-contact .botons {
+
+    width: 100%;
+    background: #75726a;
+    border-radius: none;
+    padding: 12px;
+    color: azure;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+
+@media (max-width: 768px) {
+    .container-contact {
+        align-items: center;
+        /*justify-items: center;*/
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'map-container'
+        'contact-detail'
+        'form-container';
+    }
+    .contact {
+        padding: 40px 5px;
+    }    
+    .mapa {
+        width: 100%;
+    }
+
+
+
+
+    .formbox .row50 {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .inputbox {
+        
+        width: 100%;
+    }
+
+}

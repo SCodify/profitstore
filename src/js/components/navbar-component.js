@@ -27,9 +27,12 @@ export default class NavbarComponent extends HTMLElement {
                     height: 27px;
                     justify-content: space-between;
                     align-items: center;
-                    background-color: #333;
+                    background: linear-gradient(225deg, #F2F2F2, #dadada);
                     padding: 15px 30px;
                     z-index: 2;
+                    -webkit-box-shadow: 0px 3px 19px -1px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 3px 19px -1px rgba(0,0,0,0.75);
+                    box-shadow: 0px 3px 19px -1px rgba(0,0,0,0.75);
                 }
                 
                 .logo {
@@ -50,7 +53,7 @@ export default class NavbarComponent extends HTMLElement {
                 
                 .menu li a {
                     display: block;
-                    color: white;
+                    color: #0E0E0E;
                     text-decoration: none;
                     padding: 20px;
                 }
@@ -63,20 +66,23 @@ export default class NavbarComponent extends HTMLElement {
 
                 .active {
                     font-weight: bold;
-                    color: yellow !important    ;
+                    color: #0E0E0E !important;
                 }
                 
                 .bar {
                     width: 25px;
                     height: 3px;
-                    background-color: white;
+                    background-color: #0E0E0E;
                     margin: 3px 0;
                 }
 
                 @media screen and (max-width: 768px) {
                     .menu {
                         flex-direction: column;
-                        background-color: #333;
+                        background-color: #F2F2F2;
+                        -webkit-box-shadow: 0px 3px 19px -1px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 0px 3px 19px -1px rgba(0,0,0,0.75);
+                        box-shadow: 0px 3px 19px -1px rgba(0,0,0,0.75);
                         position: absolute;
                         top: 60px;
                         left: 0;
@@ -91,7 +97,7 @@ export default class NavbarComponent extends HTMLElement {
                     }
                   
                     .menu.show {
-                        height: ${menuItems.length * 58}px;
+                        height: ${menuItems.length * 64}px;
                     }
                   
                     .hamburger-menu {
@@ -115,7 +121,7 @@ export default class NavbarComponent extends HTMLElement {
                 }
             </style>
             <nav class="navbar">
-                <span class="logo">LOGO</span>
+                <img src="/logo.svg" class="logo">
                 <ul class="menu">
                     ${menuList}
                 </ul>
@@ -170,6 +176,7 @@ export default class NavbarComponent extends HTMLElement {
         layer.addEventListener('click', () => {
             layer.classList.remove('show');
             menu.classList.remove('show');
+            document.body.classList.remove('bodyScroll');
         });
     }
 }
