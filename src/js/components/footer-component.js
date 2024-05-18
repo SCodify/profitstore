@@ -131,7 +131,7 @@ export default class FooterComponent extends HTMLElement {
                     <p>Tu tienda de accesorios deportivos</p>
                   </div>
                   <div>
-                    <h4>Sitemap</h4>
+                    <h3>Sitemap</h3>
                     <p>Inicio</p>
                     <p>Quienes Somos</p>
                     <p>Catálogo</p>

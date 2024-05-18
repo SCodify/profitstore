@@ -23,7 +23,7 @@ export async function renderCatalog() {
           <img class="card-product-img aspect16" src="${element.imgProducto}" alt="" srcset=""/>
         </div>
         <div class="card-product-info">
-          <h3>${element.nombre}</h3>
+          <h2>${element.nombre}</h2>
           <p>${element.descrip}</p>
           <p class="card-product-price"><strong>${formatearAPesos(element.precio)}</strong></p>
         </div>
