@@ -131,11 +131,11 @@ export default class FooterComponent extends HTMLElement {
                     <p>Tu tienda de accesorios deportivos</p>
                   </div>
                   <div>
-                    <h4>Sitemap</h4>
-                    <p>Inicio</p>
-                    <p>Quienes Somos</p>
-                    <p>Catálogo</p>
-                    <p>Contacto</p>
+                    <h3>Sitemap</h3>
+                    <a href="/index.html">Inicio</a>
+                    <a href="/about.html">Quienes Somos</a>
+                    <a href="/catalog.html">Catálogo</a>
+                    <a href="/contact.html">Contacto</a>
                   </div>
                 </div>
                 

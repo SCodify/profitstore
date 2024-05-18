@@ -121,7 +121,7 @@ export default class NavbarComponent extends HTMLElement {
                 }
             </style>
             <nav class="navbar">
-                <img src="/logo.svg" class="logo">
+                <img src="/logo.svg" alt="logo de profit store" class="logo">
                 <ul class="menu">
                     ${menuList}
                 </ul>
