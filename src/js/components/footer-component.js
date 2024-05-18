@@ -132,10 +132,10 @@ export default class FooterComponent extends HTMLElement {
                   </div>
                   <div>
                     <h3>Sitemap</h3>
-                    <p>Inicio</p>
-                    <p>Quienes Somos</p>
-                    <p>Catálogo</p>
-                    <p>Contacto</p>
+                    <a href="/index.html">Inicio</a>
+                    <a href="/about.html">Quienes Somos</a>
+                    <a href="/catalog.html">Catálogo</a>
+                    <a href="/contact.html">Contacto</a>
                   </div>
                 </div>
                 

@@ -1,11 +1,18 @@
 # ProFit Store
 
 ### Tabla de contenido
+- [Proyecto](#proyecto)
 - [Integrantes del grupo](#integrantes-del-grupo)
 - [Tecnologías utilizadas](#tecnologías-utilizadas)
 - [Estructura de archivos del proyecto](#estructura-de-archivos-del-proyecto)
 - [Avances](#avances)
 - [Notas](#notas)
+
+## Proyecto
+
+Básicamente, el proyecto consiste en desarrollar un catálogo digital sobre la base de una lógica de negocio para el **curso de desarrollo web full-stack node.js** impartido por *Codo a Codo*.
+
+La lógica de negocio elegida fue desarrollar un catálogo de accesorios de entrenamiento deportivo, y **ProfitStore** fue el nombre elegido para nuestro negocio ficticio digital.
 
 ### Integrantes del grupo
 
@@ -71,8 +78,8 @@
 | Tener al menos una página totalmente responsive con mínimo 3 puntos de corte con media querys para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular). Para el diseño debe usarse CSS. | $\color{green}{\textsf{Completo}}$ |
 | Utilizar al menos una animación, transformación o una transición. | $\color{green}{\textsf{Completo}}$ |
 | Poseer una estructura HTML maquetada con Flexbox y/o Grid. | $\color{green}{\textsf{Completo}}$ |
-| Se considerará la presentación general del proyecto, la legibilidad del mismo, la navegación sin llegar a puntos de no retorno, la optimización de imagenes para la web y el uso de favicon | $\color{gray}{\textsf{Revisar al último}}$ |
+| Se considerará la presentación general del proyecto, la legibilidad del mismo, la navegación sin llegar a puntos de no retorno, la optimización de imagenes para la web y el uso de favicon | $\color{green}{\textsf{Completo}}$ |
 | El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. (Mandatorio) | $\color{green}{\textsf{Completo}}$ |
-| La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. (Mandatorio) | $\color{red}{\textsf{Pendiente}}$ |
-| El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de [w3](https://validator.w3.org/) sin errores.  (Mandatorio) | $\color{red}{\textsf{Pendiente}}$ |
+| La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. (Mandatorio) | $\color{green}{\textsf{Completo}}$ |
+| El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de [w3](https://validator.w3.org/) sin errores.  (Mandatorio) | $\color{green}{\textsf{Completo}}$ |
 | Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts. Es optativo incluir algún elemento de Bootstrap. | $\color{green}{\textsf{Completo}}$ |
