@@ -130,12 +130,12 @@ export default class FooterComponent extends HTMLElement {
                     <a href="../../../index.html"><h2>HOME</h2></a>
                     <p>Tu tienda de accesorios deportivos</p>
                   </div>
-                  <div>
+                  <div class="flex flex-col">
                     <h3>Sitemap</h3>
-                    <a href="/index.html">Inicio</a>
-                    <a href="/about.html">Quienes Somos</a>
-                    <a href="/catalog.html">Catálogo</a>
-                    <a href="/contact.html">Contacto</a>
+                    <a href="/index.html"><small>Inicio</small></a>
+                    <a href="/about.html"><small>Quienes Somos</small></a>
+                    <a href="/catalog.html"><small>Catálogo</small></a>
+                    <a href="/contact.html"><small>Contacto</small></a>
                   </div>
                 </div>
                 
