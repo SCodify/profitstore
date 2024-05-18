@@ -27,7 +27,7 @@ export async function renderCatalog() {
           <p>${element.descrip}</p>
           <p class="card-product-price"><strong>${formatearAPesos(element.precio)}</strong></p>
         </div>
-        <a class="custom-btn" href="../../product.html?id=${element.id}">Ver peoducto</a>
+        <a class="custom-btn" href="../../product.html?id=${element.id}">Ver producto</a>
       </div>
     `
   });
