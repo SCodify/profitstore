@@ -23,13 +23,13 @@
 }
 
 main {
-  min-height: calc(100dvh - 57px - 266.31px);
+  min-height: calc(100dvh - 57px);
   position: sticky;
 }
 
 @media (max-width: 768px) {
   main {
-    min-height: calc(100dvh - 57px - 320.69px);
+    min-height: calc(100dvh - 57px);
   }
 }
 

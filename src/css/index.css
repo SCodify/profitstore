@@ -2,13 +2,13 @@
   display: grid;
   place-content: center;
   width: 100%;
-  min-height: calc(100dvh - 57px - 266.31px);
+  min-height: calc(100dvh - 57px);
   background-color: rgba(34, 165, 201, 0.154);
 }
 
 .home-header {
   width: 100%;
-  min-height: calc(100dvh - 57px - 266.31px);
+  min-height: calc(100dvh - 57px);
   background: url('../image/home.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,11 +18,11 @@
 
 @media (max-width: 768px) {
   .home-text-container {
-    min-height: calc(100dvh - 57px - 320.69px);
+    min-height: calc(100dvh - 57px);
   }
 
   .home-header {
-    min-height: calc(100dvh - 57px - 320.69px);
+    min-height: calc(100dvh - 57px);
   }
 }
 
