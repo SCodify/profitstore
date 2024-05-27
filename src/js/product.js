@@ -19,7 +19,7 @@ export async function renderProduct() {
     <h1 class="product-title">${productData.nombre}</h1>
     <div class="card-product" id="card-product-${productData.id}">
       <div class="card-product-img-container aspect16 placeholder-img">
-        <img class="card-product-img aspect16" src="${productData.imgProducto}" alt="" srcset=""/>
+        <img class="card-product-img aspect16" src="${productData.imgProducto}" alt="${productData.nombre}"/>
       </div>
       <div class="card-product-info">
         <h2>${productData.nombre}</h2>

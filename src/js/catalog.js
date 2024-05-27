@@ -20,7 +20,7 @@ export async function renderCatalog() {
     catalog += `
       <div class="card-product" id="card-product-${element.id}">
         <div class="card-product-img-container aspect16 placeholder-img">
-          <img class="card-product-img aspect16" src="${element.imgProducto}" alt="" srcset=""/>
+          <img class="card-product-img aspect16" src="${element.imgProducto}" alt="${element.nombre}"/>
         </div>
         <div class="card-product-info">
           <h2>${element.nombre}</h2>

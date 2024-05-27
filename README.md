@@ -79,7 +79,7 @@ La lógica de negocio elegida fue desarrollar un catálogo de accesorios de entr
 | Utilizar al menos una animación, transformación o una transición. | $\color{green}{\textsf{Completo}}$ |
 | Poseer una estructura HTML maquetada con Flexbox y/o Grid. | $\color{green}{\textsf{Completo}}$ |
 | Se considerará la presentación general del proyecto, la legibilidad del mismo, la navegación sin llegar a puntos de no retorno, la optimización de imagenes para la web y el uso de favicon | $\color{green}{\textsf{Completo}}$ |
-| El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. (Mandatorio) | $\color{green}{\textsf{Completo}}$ |
-| La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. (Mandatorio) | $\color{green}{\textsf{Completo}}$ |
-| El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de [w3](https://validator.w3.org/) sin errores.  (Mandatorio) | $\color{green}{\textsf{Completo}}$ |
+| El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. $\color{red}{\textsf{(Mandatorio)}}$ | $\color{green}{\textsf{Completo}}$ |
+| La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. $\color{red}{\textsf{(Mandatorio)}}$ | $\color{green}{\textsf{Completo}}$ |
+| El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de [w3](https://validator.w3.org/) sin errores.  $\color{red}{\textsf{(Mandatorio)}}$ | $\color{green}{\textsf{Completo}}$ |
 | Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts. Es optativo incluir algún elemento de Bootstrap. | $\color{green}{\textsf{Completo}}$ |
