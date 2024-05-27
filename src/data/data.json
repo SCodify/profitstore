@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=1",
+    "imgProducto": "src/image/img1.png",
     "nombre": "Producto 1",
     "descrip": "Esta es la decripción del producto 1",
     "detalles": [
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=2",
+    "imgProducto": "src/image/img2.png",
     "nombre": "Producto 2",
     "descrip": "Esta es la decripción del producto 2",
     "detalles": [
@@ -25,7 +25,7 @@
   },
   { 
     "id": 3,
-    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=3",
+    "imgProducto": "src/image/img3.png",
     "nombre": "Producto 3",
     "descrip": "Esta es la decripción del producto 3",
     "detalles": [
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=4",
+    "imgProducto": "src/image/img4.png",
     "nombre": "Producto 4",
     "descrip": "Esta es la decripción del producto 4",
     "detalles": [
@@ -49,7 +49,7 @@
   },
   {
     "id": 5,
-    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=5",
+    "imgProducto": "src/image/img5.png",
     "nombre": "Producto 5",
     "descrip": "Esta es la decripción del producto 5",
     "detalles": [
@@ -61,7 +61,7 @@
   },
   {
     "id": 6,
-    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=6",
+    "imgProducto": "src/image/img6.png",
     "nombre": "Producto 6",
     "descrip": "Esta es la decripción del producto 6",
     "detalles": [
@@ -73,7 +73,7 @@
   },
   {
     "id": 7,
-    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=7",
+    "imgProducto": "src/image/img7.png",
     "nombre": "Producto 7",
     "descrip": "Esta es la decripción del producto 7",
     "detalles": [
@@ -85,7 +85,7 @@
   },
   {
     "id": 8,
-    "imgProducto": "https://source.unsplash.com/640x360/?gym&random=8",
+    "imgProducto": "src/image/img8.png",
     "nombre": "Producto 8",
     "descrip": "Esta es la decripción del producto 8",
     "detalles": [
