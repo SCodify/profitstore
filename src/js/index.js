@@ -7,14 +7,14 @@ import { validarFormulario } from './validator.js';
 customElements.define('navbar-component', NavbarComponent);
 customElements.define('footer-component', FooterComponent);
 
-if (window.location.pathname === "/catalog.html") {
+if (window.location.pathname === "/pages/catalog.html") {
     renderCatalog();
 }
 
-if (window.location.pathname === "/product.html") {
+if (window.location.pathname === "/pages/product.html") {
     renderProduct();
 }
 
-if (window.location.pathname === "/contact.html") {
+if (window.location.pathname === "/pages/contact.html") {
     validarFormulario();
 }

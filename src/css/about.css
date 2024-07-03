@@ -1,53 +1,65 @@
 .grid {
-    display: grid;
-    gap: 16px;
-   grid-template-rows: 1fr;
-
+  display: grid;
+  gap: 16px;
+  grid-template-rows: 1fr;
 }
-.textoCentradoVertical{
-    align-items: center;
+
+.textoCentradoVertical {
+  align-items: center;
 }
 
 .columnasDos {
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .columnasTres {
-    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media (max-width: 768px) {
-    .columna {
-        grid-template-columns: 1fr;
-    }
+  .columna {
+    grid-template-columns: 1fr;
+  }
 
-    .columnaReverso {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  .columnaReverso {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .w100 {
-    width: 100%;
+  width: 100%;
 }
 
 .cardPersonal {
-    display: flex;
-    flex-direction: column;
-    border-radius: 16px;
-    padding: 8px;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--color-enlace);
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 8px;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-enlace);
 }
 
 .fotocirular {
-    border-radius: 100%;
+  border-radius: 100%;
 }
 
-
-
 .textoCentrado {
-    text-align: center;
+  text-align: center;
+}
+
+.br-radius {
+  border-radius: 16px;
+}
+
+.tx-end {
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  .tx-align-768 {
+    text-align: start;
+  }
 }
