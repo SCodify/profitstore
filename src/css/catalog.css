@@ -55,6 +55,7 @@
   justify-content: start;
   width: max-content;
   align-self: flex-end;
+  margin-top: auto;
 }
 
 @media (max-width: 1400px) {
