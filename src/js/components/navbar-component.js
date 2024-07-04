@@ -6,10 +6,10 @@ export default class NavbarComponent extends HTMLElement {
 
     connectedCallback() {
         const menuItems = [
-            {path:'/index.html', text:"Inicio"},
-            {path:'/about.html', text:"Quienes Somos"},
-            {path:'/catalog.html', text:"Catálogo"},
-            {path:'/contact.html', text:"Contacto"}
+            {path:'/', text:"Inicio"},
+            {path:'/pages/about.html', text:"Quienes Somos"},
+            {path:'/pages/catalog.html', text:"Catálogo"},
+            {path:'/pages/contact.html', text:"Contacto"}
         ]
 
         let menuList = "";
