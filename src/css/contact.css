@@ -13,20 +13,6 @@
   gap: 16px;
 }
 
-.btn {
-  background-color: #001f3f;
-  color: white;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  font-size: 16px;
-  padding: 6px 10px;
-  display: flex;
-  justify-content: start;
-  width: max-content;
-  align-self: flex-end;
-}
-
 .mensajes {
   list-style: none;
 }
