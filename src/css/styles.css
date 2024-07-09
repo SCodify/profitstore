@@ -3,6 +3,8 @@
 @import url("./catalog.css");
 @import url("./product.css");
 @import url("./contact.css");
+@import url("./login.css");
+@import url("./admin.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
@@ -45,6 +47,15 @@ main {
 
 .p64 {
   padding: 64px 0;
+}
+
+.pyx {
+  padding: 60px 16px;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
 }
 
 .aspect16 {

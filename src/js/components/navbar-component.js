@@ -9,7 +9,8 @@ export default class NavbarComponent extends HTMLElement {
             {path:'/', text:"Inicio"},
             {path:'/pages/about.html', text:"Quienes Somos"},
             {path:'/pages/catalog.html', text:"Catálogo"},
-            {path:'/pages/contact.html', text:"Contacto"}
+            {path:'/pages/contact.html', text:"Contacto"},
+            {path:'/pages/login.html', text:"Login"}
         ]
 
         let menuList = "";

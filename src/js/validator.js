@@ -54,6 +54,9 @@ export function validarFormulario() {
       mensajes.innerHTML = listaErrores
     } else {
       mensajes.innerHTML = `<li class="green">El fomulario es valido</li>`
+      setTimeout(() => {
+        mensajes.innerHTML = "" 
+      }, 5000);
       formulario.reset()
     }
   })

@@ -21,7 +21,7 @@ export async function renderCatalog() {
     const catalog = productos.map(element => `
       <div class="card-product" id="card-product-${element.id}">
         <div class="card-product-img-container aspect16 placeholder-img">
-          <img class="card-product-img aspect16" src="${element.img_producto}" alt="${element.nombre}" loading="lazy"/>
+          <img class="card-product-img aspect16" src="https://scodify.alwaysdata.net/${element.img_producto}" alt="${element.nombre}" loading="lazy"/>
         </div>
         <div class="card-product-info">
           <h2>${element.nombre}</h2>
