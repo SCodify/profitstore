@@ -48,6 +48,9 @@ main {
 .p64 {
   padding: 64px 0;
 }
+.pt48 {
+  padding: 64px 0;
+}
 
 .flex-center {
   justify-content: center;
