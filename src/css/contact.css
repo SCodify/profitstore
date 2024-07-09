@@ -1,8 +1,14 @@
 .contacto-header {
   background-image: url("../image/home.png");
+  padding: 80px 16px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .contacto-title {
+  text-align: center;
   color: white;
   text-shadow: 0px 4px 4px black;
 }

@@ -49,10 +49,6 @@ main {
   padding: 64px 0;
 }
 
-.pyx {
-  padding: 60px 16px;
-}
-
 .flex-center {
   justify-content: center;
   align-items: center;
