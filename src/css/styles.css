@@ -52,6 +52,10 @@ main {
   padding: 64px 0;
 }
 
+.pb0 {
+  padding-bottom: 0;
+}
+
 .flex-center {
   justify-content: center;
   align-items: center;
