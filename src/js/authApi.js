@@ -34,5 +34,24 @@ export const authApi = {
       console.error('Error al verificar el token:', error);
       return { auth: false };
     }
+  },
+
+  logoutUser: async (token) => {
+    try {
+      const response = await fetch(`https://scodify.alwaysdata.net/api/auth/logout/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+      });
+
+      const data = await response.json();
+
+      return data;
+    } catch (error) {
+      console.error('Error en el logout:', error);
+      return { message: 'Error al cerrar sesión' };
+    }
   }
 }

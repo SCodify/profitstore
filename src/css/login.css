@@ -1,8 +1,23 @@
+.topbar__home {
+  background-color: hsl(145, 50%, 54%);
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: auto;
+}
+
+.topbar__home:hover {
+  background-color: hsl(145, 50%, 46%);
+}
+
 .o-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  height: calc(100dvh - 60px);
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;

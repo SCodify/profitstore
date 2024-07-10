@@ -1,24 +1,46 @@
 import { api } from './api.js';
 import { authApi } from './authApi.js'
 
-const token = localStorage.getItem('token');
+async function checkAuthOnAdminPage() {
+  const token = localStorage.getItem('token');
+  const user = JSON.parse(localStorage.getItem('user'));
 
-async function isLogin() {
-  console.log("X");
-  if (token) {
+  if (!token) {
+    redirectToLogin();
+    return false;
+  }
+
+  // Si tenemos información del usuario y no ha pasado mucho tiempo desde la última verificación, no verificamos de nuevo
+  const lastVerification = localStorage.getItem('lastVerification');
+  if (user && lastVerification && (Date.now() - parseInt(lastVerification) < 5 * 60 * 1000)) {
+    return true;
+  }
+
+  try {
     const result = await authApi.verifyToken(token);
 
-    if (!result.user) {
-      window.location.href = '/pages/login.html';
-      return;
+    if (result.user) {
+      localStorage.setItem('user', JSON.stringify(result.user));
+      localStorage.setItem('lastVerification', Date.now().toString());
+      return true;
+    } else {
+      throw new Error('Token inválido');
     }
-  } else {
-    window.location.href = '/pages/login.html';
-    return;
+  } catch (error) {
+    console.error('Error de autenticación:', error);
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    localStorage.removeItem('lastVerification');
+    redirectToLogin();
+    return false;
   }
 }
 
-isLogin()
+function redirectToLogin() {
+  window.location.href = '/pages/login.html';
+}
+
+document.addEventListener('DOMContentLoaded', checkAuthOnAdminPage)
 
 document.getElementById('productForm').addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -40,7 +62,22 @@ function showMessage(text, type) {
   messageEl.className = `message message--${type}`;
 }
 
-document.getElementById('logoutButton').addEventListener('click', () => {
-  localStorage.removeItem('token');
-  window.location.href = '/';
+document.getElementById('logoutButton').addEventListener('click', async () => {
+  const token = localStorage.getItem('token');
+  if (token) {
+    try {
+      const result = await authApi.logoutUser(token);
+      if (result.message === 'Logout exitoso') {
+        localStorage.removeItem('token');
+        window.location.href = '/pages/login.html';
+      } else {
+        showMessage('Error al cerrar sesión', 'error');
+      }
+    } catch (error) {
+      console.error('Error durante el logout:', error);
+      showMessage('Error al cerrar sesión', 'error');
+    }
+  } else {
+    window.location.href = '/';
+  }
 });
