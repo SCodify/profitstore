@@ -47,6 +47,9 @@ document.getElementById('productForm').addEventListener('submit', async (e) => {
   const formData = new FormData(e.target);
   const productData = Object.fromEntries(formData.entries());
 
+  console.log({ formData });
+  console.log({ productData });
+
   try {
     const result = await api.createProduct(productData);
     showMessage('Producto creado exitosamente', 'success');

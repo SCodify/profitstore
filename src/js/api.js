@@ -29,23 +29,32 @@ export const api = {
 
   createProduct: async (productData) => {
     const token = localStorage.getItem('token');
-    try {
-        const response = await fetch('https://scodify.alwaysdata.net/api/productos', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
-            },
-            body: JSON.stringify(productData)
-        });
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const result = await response.json();
-        return result;
-    } catch (error) {
-        console.error('Error creating product:', error);
-        throw error;
+    const formData = new FormData();
+  
+    // Agrega todos los campos de productData al FormData
+    for (const key in productData) {
+      formData.append(key, productData[key]);
     }
-}
+  
+    try {
+      const response = await fetch('https://scodify.alwaysdata.net/api/productos', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`
+          // No incluyas 'Content-Type', fetch se encargará de eso cuando uses FormData
+        },
+        body: formData
+      });
+  
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      console.error('Error creating product:', error);
+      throw error;
+    }
+  }
 }
