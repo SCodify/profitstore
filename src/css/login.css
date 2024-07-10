@@ -17,13 +17,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100dvh - 60px);
+  min-height: calc(100dvh - 60px);
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
 }
 
 .c-card {
+  margin: 20px 8px;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
