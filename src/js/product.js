@@ -22,7 +22,6 @@ export async function renderProduct() {
     const detallesList = productData.detalles.map(detalle => `<li>${detalle.clave}: ${detalle.valor}</li>`).join('');
 
     const product = `
-      <h1 class="product-title">${productData.nombre}</h1>
       <div class="card-product" id="card-product-${productData.id}">
         ${productData.img_producto ?
         `<div class="card-product-img-container aspect16 placeholder-img">
@@ -32,7 +31,7 @@ export async function renderProduct() {
         ``
       }
         <div class="card-product-info">
-          <h2>${productData.nombre}</h2>
+          <h1>${productData.nombre}</h1>
           <p>${productData.descrip}</p>
           <ul class="card-product-detail">${detallesList}</ul>
           <p class="card-product-price"><strong>${formatearAPesos(productData.precio)}</strong></p>
