@@ -16,16 +16,16 @@
   ],
   "screenshots": [
     {
-      "src": "src/images/screenshots/screenshot-desktop.png",
-      "sizes": "2880x1688",
-      "type": "image/png",
-      "form_factor": "wide"
-    },
-    {
       "src": "src/images/screenshots/screenshot-mobile.png",
       "sizes": "1290x2796",
       "type": "image/png",
       "form_factor": "narrow"
+    },
+    {
+      "src": "src/images/screenshots/screenshot-desktop.png",
+      "sizes": "2880x1688",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ],
   "icons": [
