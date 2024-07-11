@@ -84,3 +84,77 @@ document.getElementById('logoutButton').addEventListener('click', async () => {
     window.location.href = '/';
   }
 });
+
+/* ############################# */
+
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const products = await api.getProducts();
+    const tableBody = document.getElementById('productsTable').getElementsByTagName('tbody')[0];
+    
+    products.forEach(product => {
+      const row = document.createElement('tr');
+      row.classList.add('table__row');
+      
+      row.innerHTML = `
+        <td class="table__cell">${product.id}</td>
+        <td class="table__cell">${product.nombre}</td>
+        <td class="table__cell">${product.descrip}</td>
+        <td class="table__cell">${product.precio}</td>
+        <td class="table__cell">${product.categoria}</td>
+        <td class="table__cell">${product.marca}</td>
+        <td class="table__cell">${product.img_producto ? `<img src="https://scodify.alwaysdata.net${product.img_producto}" alt="${product.nombre}" class="table__image">` : 'No Image'}</td>
+        <td class="table__cell table__cell--actions">
+          <button class="button button--modify" data-id="${product.id}">Modificar</button>
+          <button class="button button--delete" data-id="${product.id}">Eliminar</button>
+        </td>
+      `;
+
+      tableBody.appendChild(row);
+    });
+
+    // Añadir event listeners para los botones de modificar y eliminar
+    document.querySelectorAll('.button--modify').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const productId = e.target.dataset.id;
+        //window.location.href = `/pages/update.html?id=${productId}`
+        console.log(`Modificar producto con ID: ${productId}`);
+      });
+    });
+
+    document.querySelectorAll('.button--delete').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const productId = e.target.dataset.id;
+        console.log(`Eliminar producto con ID: ${productId}`);
+        deleteProduct(productId);
+      });
+    });
+
+  } catch (error) {
+    console.error('Error fetching products:', error);
+  }
+});
+
+// Ejemplo de función para eliminar un producto
+async function deleteProduct(productId) {
+  const token = localStorage.getItem('token');
+  try {
+    const response = await fetch(`https://scodify.alwaysdata.net/api/productos/${productId}`, {
+      method: 'DELETE',
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    });
+    
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    // Remover el producto de la tabla
+    document.querySelector(`button[data-id="${productId}"]`).closest('tr').remove();
+    showMessage('Producto eliminado exitosamente', 'success');
+  } catch (error) {
+    console.error('Error deleting product:', error);
+    showMessage('Error al eliminar el producto', 'error');
+  }
+}

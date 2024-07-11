@@ -3,6 +3,7 @@
   color: white;
   padding: 10px 20px;
   display: flex;
+  gap: 8px;
   justify-content: space-between;
   align-items: center;
 }
@@ -29,7 +30,7 @@
 .panel {
   max-width: 600px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 16px;
   font-family: Arial, sans-serif;
 }
 
@@ -89,4 +90,83 @@
 .message--error {
   background-color: #f8d7da;
   color: #721c24;
+}
+
+/* Bloque principal */
+.table__container{
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table__title {
+  padding-left: 16px;
+}
+
+.table {
+  width: calc(100% - 32px);
+  border-collapse: collapse;
+  margin: 16px;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Elementos del bloque */
+.table__head {
+  background-color: #f4f4f4;
+}
+
+.table__row:nth-child(even) {
+  background-color: #e4e4e4;
+}
+
+.table__row:nth-child(odd) {
+  background-color: #d1d1d1;
+}
+
+.table__header {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.table__body .table__row {
+  border: 1px solid #ddd;
+}
+
+.table__body .table__cell {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.table__body .table__cell--actions {
+  display: flex;
+  gap: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.table__body .table__cell img {
+  width: 50px;
+  height: auto;
+}
+
+/* Modificadores */
+.table--products {
+  border: 2px solid #bdbdbd;
+}
+
+/* Estilos atómicos para botones */
+.button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.button--modify {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button--delete {
+  background-color: #f44336;
+  color: white;
 }
