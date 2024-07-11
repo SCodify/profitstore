@@ -9,7 +9,7 @@
 .home-header {
   width: 100%;
   min-height: calc(100dvh - 57px);
-  background: url('../image/home.png');
+  background: url('../images/home.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
