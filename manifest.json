@@ -1,33 +1,12 @@
 {
   "name": "ProfitStore",
-  "description": "Accesorios de entrenamiento de alta calidad para mejorar tu rendimiento. Encuentra bandas de resistencia, pesas y más. ¡Optimiza tu rutina hoy mismo!",
   "short_name": "ProfitStore",
-  "theme_color": "#474747",
-  "background_color": "#F2F2F2",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
-  "lang": "es-AR",
-  "categories": [
-    "fitness",
-    "store",
-    "accessories"
-  ],
-  "screenshots": [
-    {
-      "src": "src/images/screenshots/screenshot-mobile.png",
-      "sizes": "1290x2796",
-      "type": "image/png",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "src/images/screenshots/screenshot-desktop.png",
-      "sizes": "2880x1688",
-      "type": "image/png",
-      "form_factor": "wide"
-    }
-  ],
+  "background_color": "#F2F2F2",
+  "theme_color": "#474747",
   "icons": [
     {
       "src": "src/images/icons/icon32.png",
@@ -99,6 +78,27 @@
       "src": "/favicon.ico",
       "sizes": "any",
       "type": "image/x-icon"
+    }
+  ],
+  "description": "Accesorios de entrenamiento de alta calidad para mejorar tu rendimiento. Encuentra bandas de resistencia, pesas y más. ¡Optimiza tu rutina hoy mismo!",
+  "lang": "es-AR",
+  "categories": [
+    "fitness",
+    "store",
+    "accessories"
+  ],
+  "screenshots": [
+    {
+      "src": "src/images/screenshots/screenshot-mobile.png",
+      "sizes": "1290x2796",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "src/images/screenshots/screenshot-desktop.png",
+      "sizes": "2880x1688",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ]
 }

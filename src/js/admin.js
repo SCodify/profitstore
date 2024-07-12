@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.querySelectorAll('.button--modify').forEach(button => {
       button.addEventListener('click', (e) => {
         const productId = e.target.dataset.id;
-        //window.location.href = `/pages/update.html?id=${productId}`
+        window.location.href = `/pages/update.html?id=${productId}`
         console.log(`Modificar producto con ID: ${productId}`);
       });
     });
