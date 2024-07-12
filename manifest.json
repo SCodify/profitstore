@@ -89,18 +89,18 @@
   ],
   "screenshots": [
     {
-      "src": "./src/images/screenshots/screenshot-desktop.png",
-      "sizes": "1290x2796",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Captura de pantalla escritorio"
-    },
-    {
       "src": "./src/images/screenshots/screenshot-mobile.png",
       "sizes": "2880x1688",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Captura de pantalla de dispositivo móvil"
+    },
+    {
+      "src": "./src/images/screenshots/screenshot-desktop.png",
+      "sizes": "1290x2796",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Captura de pantalla escritorio"
     }
   ]
 }
